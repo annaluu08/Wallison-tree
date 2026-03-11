@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+
+<!-- RESPONSIVO -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wallison Felix Advogados</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!-- BOTÃO COMPARTILHAR -->
+<button class="share-btn" onclick="compartilhar()">
+
+🔗
+
+</button>
+<!-- CONTAINER PRINCIPAL DA ÁRVORE -->
+<div class="arvore">
+
+    <!-- LOGO DO ESCRITÓRIO -->
+    <img src="logo.png" alt="Wallison Felix Advogados" class="logo">
+
+    <!-- NOME DO ESCRITÓRIO -->
+    <h1>Wallison Felix<br>Advogados</h1>
+    <!-- SUBTÍTULO ESTRATÉGICO -->
+    <p class="subtitulo">
+    Defesa especializada para vítimas de golpes financeiros, aposentados do INSS e conflitos imobiliários.
+    </p>
+    <!-- BOTÕES DE LINKS -->
+    <div class="links">
+
+        <a href="https://seusite.com" class="botao">
+        Meu site
+        </a>
+
+        <a href="https://wa.me/5599999999999" class="botao">
+        Fale agora
+        </a>
+
+        <a href="https://instagram.com" class="botao">
+        Instagram
+        </a>
+
+        <a href="https://seusite.com/areas" class="botao">
+        Áreas de atuação
+        </a>
+
+    </div>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+    OAB/MG 207.080
+
+    </footer>
+    </div>
+    <script>
+
+    function compartilhar(){
+
+    if(navigator.share){
+
+    navigator.share({
+    title:"Wallison Felix Advogados",
+    text:"Acesse o site:",
+    url:window.location.href
+    });
+
+    }else{
+
+    navigator.clipboard.writeText(window.location.href);
+    alert("Link copiado!");
+
+    }
+
+    }
+
+    </script>
+</body>
+</html>

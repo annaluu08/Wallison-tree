@@ -1,0 +1,295 @@
+/* =========================
+   RESET BÁSICO
+   ========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body{
+
+/* fonte moderna */
+font-family:Arial, Helvetica, sans-serif;
+
+/* fundo azul da landing */
+background:linear-gradient(180deg,#0e2a47,#081a2e);
+
+/* cor do texto */
+color:white;
+
+/* centralização perfeita */
+display:flex;
+justify-content:center;
+align-items:center;
+
+/* ocupa toda altura da tela */
+min-height:100vh;
+
+/* espaço lateral no celular */
+padding:20px;
+
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+   ========================= */
+
+.arvore{
+
+/* largura ideal para celular */
+width:100%;
+max-width:420px;
+
+/* centraliza texto */
+text-align:center;
+
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo{
+
+/* tamanho da logo */
+width:120px;
+height:120px;
+
+/* deixa a logo redonda */
+border-radius:50%;
+
+/* borda dourada elegante */
+border:3px solid #d4af37;
+
+/* espaço abaixo */
+margin-bottom:20px;
+
+/* sombra leve */
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+
+}
+
+
+/* =========================
+   NOME DO ESCRITÓRIO
+   ========================= */
+
+h1{
+
+font-size:24px;
+
+line-height:1.3;
+
+margin-bottom:35px;
+
+font-weight:600;
+
+}
+/* =========================
+   SUBTÍTULO ESTRATÉGICO
+   ========================= */
+
+.subtitulo{
+
+/* tamanho ideal para celular */
+font-size:16px;
+
+/* cor clara para contraste */
+color:#e5e5e5;
+
+/* largura confortável de leitura */
+max-width:340px;
+
+/* centraliza o texto */
+margin:0 auto;
+
+/* espaço acima */
+margin-top:10px;
+
+/* espaço antes dos botões */
+margin-bottom:30px;
+
+/* melhora leitura */
+line-height:1.5;
+
+/* leve transparência elegante */
+opacity:0.9;
+
+}
+
+/* =========================
+   CONTAINER DOS LINKS
+   ========================= */
+
+.links{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+/* =========================
+   BOTÕES
+   ========================= */
+
+.botao{
+
+/* botão ocupa toda largura */
+width:100%;
+
+/* remove sublinhado */
+text-decoration:none;
+
+/* texto */
+color:white;
+
+font-weight:600;
+
+/* espaço interno */
+padding:16px;
+
+/* borda dourada */
+border:2px solid #d4af37;
+
+/* cantos arredondados */
+border-radius:10px;
+
+/* fundo transparente */
+background:rgba(255,255,255,0.05);
+
+/* efeito suave */
+transition:0.3s;
+
+}
+
+
+/* =========================
+   EFEITO HOVER
+   ========================= */
+
+.botao:hover{
+
+/* fundo dourado */
+background:#d4af37;
+
+/* texto escuro */
+color:#0e2a47;
+
+/* leve aumento */
+transform:scale(1.05);
+
+/* brilho */
+box-shadow:0 0 15px rgba(212,175,55,0.6);
+
+}
+
+
+/* =========================
+   RESPONSIVO DESKTOP
+   ========================= */
+
+@media (min-width:768px){
+
+.logo{
+
+/* logo maior no desktop */
+width:140px;
+height:140px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+.botao{
+
+font-size:18px;
+
+}
+
+}
+/* =========================
+   BOTÃO COMPARTILHAR
+   ========================= */
+
+.share-btn{
+
+/* fixa no canto da tela */
+position:fixed;
+
+/* canto superior esquerdo */
+top:20px;
+left:20px;
+
+/* cor azul escuro */
+background:#0e2a47;
+
+/* borda dourada */
+border:2px solid #d4af37;
+
+/* texto */
+color:white;
+
+/* espaço interno */
+padding:8px 14px;
+
+/* cantos arredondados */
+border-radius:8px;
+
+/* cursor */
+cursor:pointer;
+
+/* animação */
+transition:0.3s;
+
+}
+
+
+/* efeito */
+
+.share-btn:hover{
+
+background:#d4af37;
+
+color:#0e2a47;
+
+}
+
+/* =========================
+   RODAPÉ
+   ========================= */
+
+.rodape{
+
+/* espaço acima */
+margin-top:40px;
+
+/* texto pequeno */
+font-size:14px;
+
+/* dourado elegante */
+color:#d4af37;
+
+/* centralizado */
+text-align:center;
+
+/* leve transparência */
+opacity:0.9;
+
+}
